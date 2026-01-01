@@ -1,0 +1,775 @@
+body{
+  background-color: #E06D60;
+  margin: 0;
+  padding: 0;
+    /* background-image: url("/images/bg\ img\ hero.png");  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "NewSpirit";
+  src: url("fonts/NewSpiritTRIAL-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FoundersGrotesk";
+  src: url("fonts/test-founders-grotesk-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "starthings";
+  src: url("fonts/starthings.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  padding: 20px 40px;
+  background-color: rgba(17, 34, 219, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps it above content */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  /* gap: 0rem; */
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+.nav-links li:not(:last-child)::after {
+  content: "x";
+  margin: 0 16px;
+  color: #DDDAFC;
+  font-family: "starthings"; /* ⬅️ font for x */
+  font-size: 1rem;                   /* optional */
+}
+.nav-links a {
+    margin: 0;
+    text-decoration: none;
+    line-height: 0;
+    color: #DDDAFC;
+    font-size: 1.3rem;
+    font-family: "FoundersGrotesk";
+    font-weight: 200;
+    
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.nav-links p{
+    margin: 0;
+    line-height: 0;
+    color: #DDDAFC;
+    font-family: "starthings";
+}
+
+.hero {
+    margin: 0;
+    padding-top:5rem ;
+    /* padding-bottom: 5rem; */
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url("/images/orange\ bg.png"); /* path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heroGotcraft {
+    margin: 0;
+    padding-top:5rem ;
+    /* padding-bottom: 5rem; */
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url("/images/purple\ bg.png"); /* path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heroGoodroots{
+    margin: 0;
+    padding-top:5rem ;
+    /* padding-bottom: 5rem; */
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url("/images/blue\ bg.png"); /* path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    color: white;
+    font-family: "NewSpirit";
+    font-weight: 700;
+    line-height: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "FoundersGrotesk";
+    font-weight: 700;
+}
+h3{
+    font-size: 2rem;
+    color: rgb(21, 10, 145);
+    font-family: "NewSpirit";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+h4{
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    font-size: 1.25rem;
+    color: rgb(21, 10, 145);
+    font-family: "NewSpirit";
+    font-weight: 100;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    font-family: "FoundersGrotesk";
+    line-height: 150%;
+}
+.hero p{
+    margin: 0;
+    padding: 0;
+    font-family: "starthings";
+    color: white;
+    font-size: 3.5rem;
+    line-height: 0;
+}
+.hero{
+    margin: 0;
+    padding: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+/* .hero img{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 35rem;
+} */
+
+.hero .gif-container {
+  max-width: 100%;      /* control size */
+  padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gif-container video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.heroGotcraft p{
+    margin: 0;
+    padding: 0;
+    font-family: "starthings";
+    color: white;
+    font-size: 3.5rem;
+    line-height: 0;
+}
+.heroGotcraft{
+    margin: 0;
+    padding: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.heroGotcraft video{
+    padding-top: 2rem;
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+    /* height: 35rem; */
+}
+.heroGoodroots p{
+    margin: 0;
+    padding: 0;
+    font-family: "starthings";
+    color: white;
+    font-size: 3.5rem;
+    line-height: 0;
+}
+.heroGoodroots{
+    margin: 0;
+    padding: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.heroGoodroots img{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 35rem;
+}
+
+.main {
+  background-color: #DDDAFC;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ---------------- BASICS GRID ---------------- */
+
+.basics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+/* ---------------- TEAM COLUMN ---------------- */
+
+.team {
+  padding-left: 3rem;
+}
+
+.team h3 {
+  margin-bottom: 0.5rem; /* controls spacing before table */
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 0.75rem;
+}
+
+/* table rows */
+.names,
+.arrow,
+.role {
+  display: grid;
+  row-gap: 0.25rem;
+  padding-right: 2rem ;
+}
+
+.arrow {
+  justify-items: center;
+}
+
+.names p,
+.arrow p,
+.role p {
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* ---------------- TECHNICAL SKILLS COLUMN ---------------- */
+
+.technicalskills {
+  padding-left: 0rem;
+  padding-right: 3rem;
+}
+
+.technicalskills p {
+  margin: 0; /* removes browser default offset */
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------------------------------------- */
+.brandintro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+
+.brandintro img{
+    max-width: 100%;
+}
+.GoalsScope h3{
+    padding-bottom: 0.5rem;
+}
+.GoalsScope{
+    align-content: center;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.contentsection1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+.contentsection1 img{
+    max-width: 100%;
+}
+.contentsection1 .text{
+    align-content: center;
+}
+/* ----------------------------------------------------------------------------------- */
+
+.contentsection2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+.contentsection2 .text h3{
+   padding-top: 0;
+}
+.contentsection2 .Insight{
+    /* max-width: 70%; */
+    padding-left: 3rem;
+}
+.contentsection2 img{
+   padding-top: 4rem;
+   padding-left: 4rem;
+}
+.contentsection2_gotcraft{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+.contentsection2_gotcraft img{
+    max-width: 70%;
+    padding-left: 3rem;
+}
+.contentsection2_gotcraft .text{
+    padding-top: 5rem;
+}
+
+.projectinfo{
+    padding-bottom: 2rem;
+}    
+.contentsection2_HCI{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+.contentsection2_HCI .text{
+    padding-top: 0rem;
+    max-width: 100%;
+}
+
+.contentsection2_HCI img{
+    max-width: 70%;
+    align-content: center;
+
+}
+/* ----------------------------------------------------------------------------------- */
+.diagramimages {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+}
+.diagramimages img{
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
+/* -------------------------------------------------------------------------- */
+.contentsection3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+.contentsection3 img{
+    max-width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+.websiteiterations{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+.vids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+.iteration-videos video{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.contentsection4{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+
+.page1{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 3rem;
+    padding-top: 3rem;
+}
+.page1 img{
+    max-width: 100%;
+}
+.pagesvids video{
+    max-width: 100%;
+
+}
+.page1 .info{
+    align-content: center;
+}
+
+.page2{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 3rem;
+    padding-top: 3rem;
+
+}
+.page2 img{
+    max-width: 100%;
+}
+.page2 .info{
+    align-content: center;
+}
+
+/* ---------- */
+.page1HCI{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-top: 3rem;
+}
+.page1HCI video{
+   max-width: 90%;
+    max-height: 80%;
+    padding-bottom: 0;
+    margin: 0;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: #000;
+    border-width: .25rem;
+}
+.page1HCI .info{
+    align-content: center;
+}
+
+.page2HCI{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    margin: 0;
+
+}
+.page2HCI video{
+    max-width: 90%;
+    max-height: 80%;
+    padding-bottom: 0;
+    margin: 0;
+     border-radius: 3rem;
+    border-style: solid;
+    border-color: #000;
+    border-width: .25rem;
+}
+.page2HCI .info{
+    align-content: center;
+        padding-bottom: 0;
+    margin: 0;
+}
+
+/* ----------- */
+
+.reflection{
+    padding: 3rem;
+    
+}
+.reflectionHCI{
+    padding: 3rem;
+    padding-top: 0;
+    
+}
+
+/* ===== Carousel Container ===== */
+/* ===== Carousel ===== */
+.slideshow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+  border-radius: 12px;
+  pointer-events: none;
+  object-fit: contain; /* or remove line */
+
+}
+/* .contentsection2 .carousel-track {
+  display: flex;
+  justify-content: center;
+}
+
+.contentsection2 .carousel-track img {
+  flex: 0 0 70%;
+  width: 70%;
+  height: auto;
+  object-fit: contain; /* prevents cropping */
+  /* border-radius: 12px;
+  pointer-events: none;
+} */ 
+
+/* Arrows */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+.carousel-btn.prev { left: 12px; }
+.carousel-btn.next { right: 12px; }
+
+/* Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #000;
+}
+
+/* ===== Poster Carousel (contentsection2) ===== */
+/* =========================================================
+ /* =========================================================
+   SHRINK-WRAPPED POSTER CAROUSEL (NO EXTRA SPACE)
+   ========================================================= */
+
+.contentsection2 .slideshow {
+  display: inline-block;
+}
+
+/* Carousel frame hugs content */
+.contentsection2 .carousel {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Track auto-sizes to images */
+.contentsection2 .carousel-track {
+  display: flex;
+  align-items: center;
+  width: max-content;        /* 👈 KEY FIX */
+  transition: transform 0.5s ease;
+}
+
+/* Portrait posters */
+.contentsection2 .carousel-track img {
+  flex: 0 0 auto;
+  height: auto;
+  width: auto;
+  max-height: 80vh;          /* safety cap */
+  max-width: none;           /* 👈 prevent slot widening */
+  margin: 0;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  pointer-events: none;
+}
+
+/* Arrow buttons */
+.contentsection2 .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.contentsection2 .carousel-btn.prev { left: 0; }
+.contentsection2 .carousel-btn.next { right: 0; }
+
+.contentsection2 .carousel-btn:hover {
+  background: rgba(0,0,0,0.85);
+}
+
+/* Dots */
+.contentsection2 .carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.contentsection2 .dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contentsection2 .dot.active {
+  background: #000;
+}
+
+/* Kill old animation & width rules */
+.contentsection2 .carousel-track {
+  animation: none !important;
+}
+/* ----------------------------------------- */
+
+.contentsection2_gotcraft .slideshow {
+  display: inline-block;
+}
+
+/* Carousel frame hugs content */
+.contentsection2_gotcraft .carousel {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Track auto-sizes to images */
+.contentsection2_gotcraft .carousel-track {
+  display: flex;
+  align-items: center;
+  width: max-content;        /* 👈 KEY FIX */
+  transition: transform 0.5s ease;
+}
+
+/* Portrait posters */
+.contentsection2_gotcraft .carousel-track img {
+  flex: 0 0 auto;
+  height: auto;
+  width: auto;
+  max-height: 130vh;          /* safety cap */
+  max-width: none;           /* 👈 prevent slot widening */
+  margin: 0;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  pointer-events: none;
+}
+
+/* Arrow buttons */
+.contentsection2_gotcraft .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.contentsection2_gotcraft .carousel-btn.prev { left: 0; }
+.contentsection2_gotcraft .carousel-btn.next { right: 0; }
+
+.contentsection2_gotcraft .carousel-btn:hover {
+  background: rgba(0,0,0,0.85);
+}
+
+/* Dots */
+.contentsection2_gotcraft .carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.contentsection2_gotcraft .dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contentsection2_gotcraft .dot.active {
+  background: #000;
+}
+
+/* Kill old animation & width rules */
+.contentsection2_gotcraft .carousel-track {
+  animation: none !important;
+}

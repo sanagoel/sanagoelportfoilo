@@ -1,0 +1,261 @@
+body{
+  background-color: #2B3B94;
+  margin: 0;
+  padding: 0;
+    background-image: url("/images/bg\ img\ hero.png"); /* path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+@font-face {
+  font-family: "NewSpirit";
+  src: url("fonts/NewSpiritTRIAL-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FoundersGrotesk";
+  src: url("fonts/test-founders-grotesk-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "starthings";
+  src: url("fonts/starthings.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+p{
+    padding: 0;
+    margin: 0;
+    font-family: "FoundersGrotesk" ;
+}
+.hero h1{
+    padding: 0;
+    margin: 0;
+    font-size: 11rem;
+    align-items: left;
+    font-family: "NewSpirit";
+    font-weight: 200;
+    color: white;
+    
+}
+.about_hero h1{
+    padding: 0;
+    margin: 0;
+    font-size: 6.5rem;
+    align-items: left;
+    font-family: "NewSpirit";
+    font-weight: 200;
+    color: white;
+    
+}
+.subtitle h2{
+    margin: 0;
+    line-height: 0;
+    font-family: "FoundersGrotesk";
+    font-size: 2.5rem;
+    color: #FF78C5;
+    padding: .5rem;
+}
+.about_subtitle h2{
+    margin: 0;
+    line-height: 0;
+    font-family: "FoundersGrotesk";
+    font-size: 1.5rem;
+    color: #FF78C5;
+    padding: .5rem;
+}
+.project_highlight h3{
+    padding: 0;
+    margin: 0;
+    font-family: "NewSpirit";
+    font-weight: 400;
+    font-size: 3rem;
+    margin-left: 3rem;
+    padding-bottom: 0;
+    padding-top: 1rem;
+    color: #192462;
+}
+
+.project_highlight p{
+    padding: 0;
+    margin: 0;
+    margin-left: 3rem;
+    padding-top: .5rems;
+    font-size: 1.5rem;
+    color: #192462;
+}
+
+.subtitle p{
+    margin: 0;
+    line-height: 0s;
+    font-family: "starthings";
+    font-size: 2rem;
+    color: #FF78C5;
+}
+.about_subtitle p{
+    margin: 0;
+    line-height: 0s;
+    font-family: "starthings";
+    font-size: 1rem;
+    color: #FF78C5;
+}
+.navbar {
+  padding: 20px 40px;
+  background-color: rgb(15, 22, 122, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps it above content */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  /* gap: 0rem; */
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+.nav-links li:not(:last-child)::after {
+  content: "x";
+  margin: 0 16px;
+  color: #DDDAFC;
+  font-family: "starthings"; /* ⬅️ font for x */
+  font-size: 1rem;                   /* optional */
+}
+.nav-links a {
+    margin: 0;
+    text-decoration: none;
+    line-height: 0;
+    color: #DDDAFC;
+    font-size: 1.3rem;
+    font-family: "FoundersGrotesk";
+    font-weight: 200;
+    
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.nav-links p{
+    margin: 0;
+    line-height: 0;
+    color: #DDDAFC;
+    font-family: "starthings";
+}
+
+.hero {
+    margin: 0;
+    padding-top:5rem ;
+    /* padding-bottom: 5rem; */
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url("/images/bg\ img\ hero.png"); /* path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project_highlight{
+    margin: 0;
+    background-color: #CADEE8;
+}
+
+.subtitle{
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+.about_subtitle {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.tagline{
+    margin: 0;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 27rem;
+    font-size: 1.4rem;
+}
+.tagline_header{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: .5rem;
+}
+.project_highlight{
+    margin: 0;
+    padding: 0;
+}
+
+.project_highlight {
+    margin: 0;
+    padding: 0;
+    background-color: #CADEE8;
+}
+
+.project_highlight .cards {
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr);  */
+    flex-direction: row;
+    gap: 4rem;
+    margin-left: 8rem; /* account for 3rem left/right margin */
+    margin-right: 8rem;        /* match text margin */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    box-sizing: border-box;
+}
+
+.project_highlight .cards a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.project_highlight .cards img {
+    max-width:100%;
+    height: auto;
+    display: block;
+ 
+    
+}
+.project_highlight .cards a:hover {
+  transform: translateY(-4rem);
+}
+
+.info{
+    align-items: flex-end;
+    margin-right: 3rem;
+    margin-left: 5rem;
+}
+.info p{
+    max-width: 100%;
+    font-size: 1.5rem;
+    color: white;
+}
+.about_hero{
+    margin-left: 3rem;
+}
+.project_highlight_header{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    gap: 0;
+
+}
+.arrow img{
+    max-width: 60%;
+    padding-top: 2rem;
+    max-height: 80%;
+}
